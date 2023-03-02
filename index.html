@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/stopwatch.png">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Pratice 6</title>
+    <title>Stopwatch</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="numbers">
-            <div class="stopwatch hour">18</div>
-            <div class="stopwatch minute">09</div>
-            <div class="stopwatch second">00</div>
+    <main>
+        <div class="container">
+            <h1 class="title">Stopwatch</h1>
+            <div class="box-items">
+                <div class="item">
+                    <div class="hour">00</div>
+                    <button class="btn btn-start">START</button>
+                </div>
+                <span class="dots">:</span>
+                <div class="item">
+                    <div class="minute">00</div>
+                    <button class="btn btn-stop" disabled="disabled">STOP</button>
+                </div>
+                <span class="dots">:</span>
+                <div class="item">
+                    <div class="second">00</div>
+                    <button class="btn btn-clear" disabled="disabled">CLEAR</button>
+                </div>
+            </div>
         </div>
-        <div class="buttons">
-            <button class="button start">start</button>
-            <button class="button stop">stop</button>
-            <button class="button restart">restart</button>
-        </div>
-    </div>
+    </main>
 
-    <script src="./js/timer.js"></script>
+
+    <script src="./js/stopwatch.js"></script>
 </body>
 </html>
